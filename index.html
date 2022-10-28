@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,52 @@
     <title>calculator</title>
 </head>
 <body>
-    
+    <section id="display">
+        <div id="window-button">
+            <button><span>x</span></button>
+            <button><span>-</span></button>
+            <button><span>+</span></button>
+        </div>
+        <div id="display-number">
+            <span>0x0</span>
+        </div>
+        <div id="display-button" class="button">
+            <input type="radio" name="codeType" id="codeTypeASCII">
+            <label for="codeTypeASCII">ASCII</label>
+            <input type="radio" name="codeType" id="codeTypeUnicode">
+            <label for="codeTypeUnicode">유니코드</label>
+            <button>2진수 가리기</button>
+            <input type="radio" name="notation" id="notation8">
+            <label for="notation8">8</label>
+            <input type="radio" name="notation" id="notation10">
+            <label for="notation10">10</label>
+            <input type="radio" name="notation" id="notation16">
+            <label for="notation16">16</label>
+        </div>
+        <div id="display-binary">
+            <div>
+                <span>0000 0000</span>
+                <span>0000 0000</span>
+                <span>0000 0000</span>
+                <span>0000 0000</span>
+            </div>
+            <div>
+                <span>63</span>
+                <span>47</span>
+                <span>32</span>
+            </div>
+            <div>
+                <span>0000 0000</span>
+                <span>0000 0000</span>
+                <span>0000 0000</span>
+                <span>0000 0000</span>
+            </div>
+            <div>
+                <span>31</span>
+                <span>15</span>
+                <span>0</span>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
