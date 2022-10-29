@@ -1,7 +1,15 @@
+/** Regular */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "San Francisco";
 }
 
 body {
@@ -67,6 +75,11 @@ body {
     visibility: visible;
 }
 
+#display-number {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
 #buttons {
     height: 70%;
 }
