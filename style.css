@@ -136,6 +136,7 @@ button {
 }
 .operator.arithmetic-operator {
     background-color: rgb(246, 153, 12);
+    font-size: 1.8rem;
 }
 
 .number {
