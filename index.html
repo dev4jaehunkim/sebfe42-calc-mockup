@@ -17,43 +17,59 @@
                 <button id="maximize"><span>+</span></button>
             </div>
             <div id="display-number">
-                <span>0x0</span>
+                0x0
             </div>
-            <div id="display-button" class="button">
-                <input type="radio" name="codeType" id="codeTypeASCII">
-                <label for="codeTypeASCII">ASCII</label>
-                <input type="radio" name="codeType" id="codeTypeUnicode">
-                <label for="codeTypeUnicode">유니코드</label>
-                <button>2진수 가리기</button>
-                <input type="radio" name="notation" id="notation8">
-                <label for="notation8">8</label>
-                <input type="radio" name="notation" id="notation10">
-                <label for="notation10">10</label>
-                <input type="radio" name="notation" id="notation16">
-                <label for="notation16">16</label>
+            <div id="displayButton" class="button">
+                <div class="codeType">
+                    <label for="codeType">
+                        <input type="radio" class="codeType" name="codeType" id="codeTypeASCII" checked="checked">
+                        <span>ASCII</span>
+                    </label>
+                    <label for="codeType">
+                        <input type="radio" class="codeType" name="codeType" id="codeTypeUnicode">
+                        <span>유니코드</span>
+                    </label>
+                </div>
+                <button id="hideBinary">2진수 가리기</button>
+                <div class="notation">
+                    <label for="notation8">
+                        <input type="radio" name="notation" id="notation8">
+                        <span>8</span>
+                    </label>
+                <label for="notation10">
+                    <input type="radio" name="notation" id="notation10">
+                    <span>10</span>
+                </label>
+                    <label for="notation16">
+                        <input type="radio" name="notation" id="notation16" checked="checked">
+                        <span>16</span>
+                    </label>
+                </div>
             </div>
-            <div id="display-binary">
+            <div id="displayBinary">
                 <div>
-                    <span>0000 0000</span>
-                    <span>0000 0000</span>
-                    <span>0000 0000</span>
-                    <span>0000 0000</span>
-                </div>
-                <div>
-                    <span>63</span>
-                    <span>47</span>
-                    <span>32</span>
-                </div>
-                <div>
-                    <span>0000 0000</span>
-                    <span>0000 0000</span>
-                    <span>0000 0000</span>
-                    <span>0000 0000</span>
-                </div>
-                <div>
-                    <span>31</span>
-                    <span>15</span>
-                    <span>0</span>
+                    <div class="binaryLine">
+                        <span>0000 0000</span>
+                        <span>0000 0000</span>
+                        <span>0000 0000</span>
+                        <span>0000 0000</span>
+                    </div>
+                    <div class="decimalLine">
+                        <span>63</span>
+                        <span>47</span>
+                        <span>32</span>
+                    </div>
+                    <div class="binaryLine">
+                        <span>0000 0000</span>
+                        <span>0000 0000</span>
+                        <span>0000 0000</span>
+                        <span>0000 0000</span>
+                    </div>
+                    <div class="decimalLine">
+                        <span>31</span>
+                        <span>15</span>
+                        <span>0</span>
+                    </div>
                 </div>
             </div>
             <div id="buttons">
