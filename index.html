@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculator</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="button-box" id="buttons">
+      <div class="operator-left-group">
+        <div class="row">
+          <button class="operator">AND</button>
+          <button class="operator">OR</button>
+        </div>
+        <div class="row">
+          <button class="operator">NOR</button>
+          <button class="operator">XOR</button>
+        </div>
+        <div class="row">
+          <button class="operator">&lt;&lt;</button>
+          <button class="operator">&gt;&gt;</button>
+        </div>
+        <div class="row">
+          <button class="operator">X&lt;&lt;Y</button>
+          <button class="operator">X&gt;&gt;Y</button>
+        </div>
+        <div class="row">
+          <button class="operator flip">바이트 플립</button>
+        </div>
+        <div class="row">
+          <button class="operator flip">단어 플립</button>
+        </div>
+      </div>
+      <div class="number-group">
+        <div class="row">
+          <button class="number">D</button>
+          <button class="number">E</button>
+          <button class="number">F</button>
+        </div>
+        <div class="row">
+          <button class="number">A</button>
+          <button class="number">B</button>
+          <button class="number">C</button>
+        </div>
+        <div class="row">
+          <button class="number">7</button>
+          <button class="number">8</button>
+          <button class="number">9</button>
+        </div>
+        <div class="row">
+          <button class="number">4</button>
+          <button class="number">5</button>
+          <button class="number">6</button>
+        </div>
+        <div class="row">
+          <button class="number">1</button>
+          <button class="number">2</button>
+          <button class="number">3</button>
+        </div>
+        <div class="row">
+          <button class="number">FF</button>
+          <button class="number">0</button>
+          <button class="number">00</button>
+        </div>
+      </div>
+      <div class="operator-right-group">
+        <div class="row">
+          <button class="operator" id="all-clear">AC</button>
+          <button class="operator" id="clear">C</button>
+        </div>
+        <div class="row">
+          <button class="operator">RoL</button>
+          <button class="operator">RoR</button>
+        </div>
+        <div class="row">
+          <button class="operator">2&apos;s</button>
+          <button class="operator">1&apos;s</button>
+        </div>
+        <div class="row">
+          <button class="operator arithmetic-operator">÷</button>
+          <button class="operator arithmetic-operator">-</button>
+        </div>
+        <div class="row">
+          <button class="operator arithmetic-operator">×</button>
+          <button class="operator arithmetic-operator">+</button>
+        </div>
+        <div class="row">
+          <button class="operator arithmetic-operator" id="calculate">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

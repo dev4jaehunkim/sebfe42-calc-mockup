@@ -1,0 +1,155 @@
+/** Regular */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "San Francisco";
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#app {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 400px;
+    height: 600px;
+    
+    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#display {
+    height: 30%;
+}
+
+#window-button button {
+    appearance: none;
+    border: 0;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+#window-button span {
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+}
+#close {
+    margin-left: 5px;
+    background-color: rgb(255, 99, 91);
+}
+#close span {
+    color: rgb(165, 18, 19);
+}
+#minimize {
+    background-color: rgb(252, 188, 65);
+}
+#minimize span {
+    color: rgb(178, 114, 31);
+}
+#maximize {
+    background-color: rgb(0, 200, 74);
+}
+#maximize span {
+    background-color: rgb(0, 104, 18);
+}
+
+#window-button button:hover span {
+    visibility: visible;
+}
+
+#display-number {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+/* button-box styling */
+#buttons {
+    /* width, height 추후 수정 */
+    width: 420px; 
+    height: 300px;
+    display: flex;
+}
+
+.operator-left-group {
+    flex: 2;
+}
+.operator-left-group .row {
+    display: flex;
+}
+.operator-left-group .row .operator {
+    flex: 1;
+}
+.number-group {
+    flex: 3;
+}
+.number-group .row {
+    display: flex;
+}
+.number-group .row .number {
+    flex: 1;
+}
+.operator-right-group {
+    flex: 2;
+}
+.operator-right-group .row {
+    display: flex;
+}
+.operator-right-group .row .operator {
+    flex: 1;
+}
+
+.button-box button {
+    width: 60px;
+    height: 50px;
+    border: 1px solid rgb(49, 49, 49);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.number {
+    background-color: rgb(149, 145, 145);
+}
+.number:active {
+    background-color: rgb(199, 191, 191);
+}
+.operator {
+    background-color: rgb(79, 74, 74);
+}
+.operator:active {
+    background-color: rgb(117, 111, 111);
+}
+.operator.arithmetic-operator {
+    background-color: rgb(246, 153, 12);
+    font-size: 1.8rem;
+}
+.operator.arithmetic-operator:active {
+    background-color: rgb(209, 127, 4);
+}
+.operator.arithmetic-operator:not(#calculate):active {
+    border-width: 1.8px;
+}
