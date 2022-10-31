@@ -5,31 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="button-box">
+    <div class="button-box" id="buttons">
       <div class="operator-left-group">
         <div class="row">
-          <button class="operator-left">AND</button>
-          <button class="operator-left">OR</button>
+          <button class="operator">AND</button>
+          <button class="operator">OR</button>
         </div>
         <div class="row">
-          <button class="operator-left">NOR</button>
-          <button class="operator-left">XOR</button>
+          <button class="operator">NOR</button>
+          <button class="operator">XOR</button>
         </div>
         <div class="row">
-          <button class="operator-left">&lt;&lt;</button>
-          <button class="operator-left">&gt;&gt;</button>
+          <button class="operator">&lt;&lt;</button>
+          <button class="operator">&gt;&gt;</button>
         </div>
         <div class="row">
-          <button class="operator-left">X&lt;&lt;Y</button>
-          <button class="operator-left">X&gt;&gt;Y</button>
+          <button class="operator">X&lt;&lt;Y</button>
+          <button class="operator">X&gt;&gt;Y</button>
         </div>
         <div class="row">
-          <button class="operator-left flip">바이트 플립</button>
+          <button class="operator flip">바이트 플립</button>
         </div>
         <div class="row">
-          <button class="operator-left flip">단어 플립</button>
+          <button class="operator flip">단어 플립</button>
         </div>
       </div>
       <div class="number-group">
@@ -66,29 +67,27 @@
       </div>
       <div class="operator-right-group">
         <div class="row">
-          <button class="operator-right all-clear">AC</button>
-          <button class="operator-right clear">C</button>
+          <button class="operator" id="all-clear">AC</button>
+          <button class="operator" id="clear">C</button>
         </div>
         <div class="row">
-          <button class="operator-right">RoL</button>
-          <button class="operator-right">RoR</button>
+          <button class="operator">RoL</button>
+          <button class="operator">RoR</button>
         </div>
         <div class="row">
-          <button class="operator-right">2&apos;s</button>
-          <button class="operator-right">1&apos;s</button>
+          <button class="operator">2&apos;s</button>
+          <button class="operator">1&apos;s</button>
         </div>
         <div class="row">
-          <button class="operator-right arithmetic-operator">÷</button>
-          <button class="operator-right arithmetic-operator">-</button>
+          <button class="operator arithmetic-operator">÷</button>
+          <button class="operator arithmetic-operator">-</button>
         </div>
         <div class="row">
-          <button class="operator-right arithmetic-operator">×</button>
-          <button class="operator-right arithmetic-operator">+</button>
+          <button class="operator arithmetic-operator">×</button>
+          <button class="operator arithmetic-operator">+</button>
         </div>
         <div class="row">
-          <button class="operator-right arithmetic-operator" id="calculate">
-            =
-          </button>
+          <button class="operator arithmetic-operator" id="calculate">=</button>
         </div>
       </div>
     </div>
